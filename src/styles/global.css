@@ -1,0 +1,79 @@
+/* 全局样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  height: 100%;
+}
+
+/* 工作模式全局主题 */
+.mode-work {
+  --primary-color: #3498db;
+  --bg-color: #f0f2f5;
+  --header-gradient: linear-gradient(90deg, #2c3e50 0%, #3498db 100%);
+}
+
+/* 学习模式全局主题 */
+.mode-study {
+  --primary-color: #2ecc71;
+  --bg-color: #f0f9f0;
+  --header-gradient: linear-gradient(90deg, #27ae60 0%, #2ecc71 100%);
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 卡片选中效果 */
+.el-card {
+  transition: all 0.3s ease;
+}
+
+.el-card:hover {
+  transform: translateY(-2px);
+}
+
+/* 按钮样式优化 */
+.el-button {
+  transition: all 0.3s ease;
+}
+
+/* 分段控制器样式优化 */
+.el-segmented {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.el-segmented .el-segmented__item {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.el-segmented .el-segmented__item.is-selected {
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
